@@ -14,9 +14,9 @@ class AnquanPipeline(object):
         #连接数据库
         self.client = pymongo.MongoClient('localhost')
         #创建库
-        self.db = self.client['scrapy1']
+        self.db = self.client['sigu']
         #创建表
-        self.table = self.db['2']
+        self.table = self.db['tezhong']
 
     def process_item(self,item,spider):
         
