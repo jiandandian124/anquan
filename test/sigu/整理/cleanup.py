@@ -25,7 +25,7 @@ def tihuan(text):
     return t
 
 
-data_file = 'zhengti.csv'  # 文件路径
+data_file = 'zhengti_yuan.csv'  # 文件路径
 df = pd.read_csv(data_file, encoding='UTF-8')  # 读取csv文件为datafile，编码为utf-8
 df['text'] = df['text'].apply(tihuan)  # apply应用参数内的函数
 # df.to_csv('zhengti01.csv', index = False)       # 保存为csv文件
