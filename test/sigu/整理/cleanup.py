@@ -28,7 +28,7 @@ def tihuan(text):
 data_file = 'zhengti_yuan.csv'  # 文件路径
 df = pd.read_csv(data_file, encoding='UTF-8')  # 读取csv文件为datafile，编码为utf-8
 df['text'] = df['text'].apply(tihuan)  # apply应用参数内的函数
-# df.to_csv('zhengti01.csv', index = False)       # 保存为csv文件
+# df.to_csv('zhengti_fenci.csv', index = False)       # 保存为csv文件
 texts = df['text'].tolist()
 i = 0
 for text in texts[0:100]:

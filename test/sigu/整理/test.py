@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 
 
-data_file = 'zhengti01.csv'                       # 文件路径
+data_file = 'zhengti_fenci.csv'  # 文件路径
 df = pd.read_csv(data_file, encoding='UTF-8')   # 读取csv文件为datafile，编码为utf-8
 texts = df['text'].tolist()
 i = 0
