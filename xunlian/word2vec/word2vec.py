@@ -15,7 +15,7 @@ torch.manual_seed(seed)
 
 # split data to 10 fold
 fold_num = 10
-data_file = './zhengti_fenci.csv'
+data_file = 'zhengti_train.csv'
 import pandas as pd
 
 
@@ -117,7 +117,7 @@ logging.info('Total %d docs.' % len(train_texts))
 logging.info('Start training...')
 from gensim.models.word2vec import Word2Vec
 
-num_features = 300     # Word vector dimensionality
+num_features = 100     # Word vector dimensionality
 num_workers = 8       # Number of threads to run in parallel
 
 train_texts = list(map(lambda x: list(x.split()), train_texts))
